@@ -1,8 +1,8 @@
-#Recon-ng
+# Recon-ng
 
-##install recon from marketplace
+## install recon from marketplace
 ```marketplace install recon```
-##find tool called hackertarget
+## find tool called hackertarget
 ```marketplace search hackertarget```
-##loading the module hackertarget
-modules load recon/domains-hosts/hackertarget
+## loading the module hackertarget
+```modules load recon/domains-hosts/hackertarget```
